@@ -1,0 +1,38 @@
+<html>
+    <head>
+<title>My Family Book</title>
+<link rel="stylesheet" type="text/css" href="style.css" >
+</head>
+<body>
+    <h1> My Family Book</h1>
+</body>
+<audio id="audio" src="https://mahdihat791.github.io/v2/test.mp3"> </audio>
+<img src="https://toppng.com/uploads/preview/big-family-animated-11549900781ra2crel6tg.png " id="family_cover_page">
+<h4 id="Head1"> </h4>
+<button onclick="nextslide()"> Next </button>
+<script>
+var Names =["Achin Jain","Nidhi Jain", "Jeevika Jain"];
+console.log(Names);
+document.getElementById("Head1")
+
+var Images =["https://www.seekpng.com/png/detail/373-3737886_man-clipart-dad-animated-picture-of-father.png","https://webstockreview.net/images/asian-clipart-mum-10.jpg", "https://us.123rf.com/450wm/yupiramos/yupiramos1905/yupiramos190534185/122724605-stock-vector-little-girl-kid-character-vector-illustration-design.jpg?ver=6https://us.123rf.com/450wm/yupiramos/yupiramos1905/yupiramos190534185/122724605-stock-vector-little-girl-kid-character-vector-illustration-design.jpg?ver=6"];
+console.log(Images);
+document.getElementById("family_cover_page").innerHTML=Images;
+
+var i = 0;
+function nextslide(){
+  
+if(i== 3)
+{
+i=0;
+}
+document.getElementById("family_cover_page").src=Images[i];
+  document.getElementById("Head1").innerHTML=Names[i];
+  i++;
+  document.getElementById("audio").play();
+
+
+}
+
+</script>
+</html>
